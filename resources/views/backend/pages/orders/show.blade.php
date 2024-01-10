@@ -14,6 +14,13 @@
                             <div class="tt-page-title">
                                 <h2 class="h5 mb-lg-0">{{ localize('Order Details') }}</h2>
                             </div>
+                            <div class="tt-action">
+                                <a href="{{ route('admin.orders.downloadInvoice', $order->id) }}"
+                                    class="btn btn-primary">
+                                    <i data-feather="download" width="18"></i>
+                                    {{ localize('Download Invoice') }}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -24,7 +31,6 @@
                 <div class="col-xl-9 order-2 order-md-2 order-lg-2 order-xl-1">
                     <div class="card mb-4" id="section-1">
                         <div class="card-header border-bottom-0">
-
                             <!--order status-->
                             <div class="row justify-content-between align-items-center g-3">
                                 <div class="col-auto flex-grow-1">
@@ -46,8 +52,25 @@
                                     @endif
 
                                 </div>
+                            </div>
+                        </div>
 
+                        <!--customer info-->
+                        <div class="card-body">
+                            <div class="row justify-content-between g-3">
                                 <div class="col-auto col-lg-3">
+                                    <label>Assign Deliveryman</label>
+                                    <div class="input-group">
+                                        <select class="form-select select2" name="payment_status"
+                                            data-minimum-results-for-search="Infinity" id="update_payment_status">
+                                            <option value="" disabled>
+                                                {{ localize('Assign Deliveryman') }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto col-lg-3">
+                                    <label>Payment Status</label>
                                     <div class="input-group">
                                         <select class="form-select select2" name="payment_status"
                                             data-minimum-results-for-search="Infinity" id="update_payment_status">
@@ -63,6 +86,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto col-lg-3">
+                                    <label>Delivery Status</label>
                                     <div class="input-group">
                                         <select class="form-select select2" name="delivery_status"
                                             data-minimum-results-for-search="Infinity" id="update_delivery_status">
@@ -81,18 +105,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <a href="{{ route('admin.orders.downloadInvoice', $order->id) }}"
-                                        class="btn btn-primary">
-                                        <i data-feather="download" width="18"></i>
-                                        {{ localize('Download Invoice') }}
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--customer info-->
-                        <div class="card-body">
+                            </div><br>
                             <div class="row justify-content-between g-3">
                                 <div class="col-xl-7 col-lg-6">
                                     <div class="welcome-message">

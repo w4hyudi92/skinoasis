@@ -22,8 +22,8 @@
                                 <img src="{{ uploadedAsset(getSetting('navbar_logo')) }}" alt="logo">
                             </a>
                         </div>
-                        <h2 class="mb-4 h3">{{ localize('Hey there!') }}
-                            <br>{{ localize('Welcome back to Grostore.') }}
+                        <h2 class="mb-4 h3">{{ localize('Welcome') }}
+                            <br>{{ localize('Please sign in for access dashboard.') }}
                         </h2>
 
                         <div class="row g-3">

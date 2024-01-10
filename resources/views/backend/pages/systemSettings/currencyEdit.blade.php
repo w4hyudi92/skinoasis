@@ -45,7 +45,7 @@
                                         value="{{ $currency->symbol }}">
                                 </div>
 
-                                @if ($currency->code != 'usd')
+                                @if ($currency->code != 'idr')
                                     <div class="mb-4">
                                         <label for="code" class="form-label">{{ localize('Currency Code') }}</label>
                                         <input type="text" name="code" id="code"
@@ -53,12 +53,12 @@
                                             value="{{ $currency->code }}">
                                     </div>
                                 @else
-                                    <input type="hidden" name="code" value="usd">
+                                    <input type="hidden" name="code" value="idr">
                                 @endif
 
                                 <div class="mb-4">
-                                    <label for="rate" class="form-label">{{ localize('Rate') }} <small>(
-                                            {{ localize('1 USD = ?') }} )</small></label>
+                                    <label for="rate" class="form-label">{{ localize('Rate') }} 
+                                        <small>( {{ localize('1 USD = ?') }} )</small></label>
                                     <input type="number" step="0.001" min="0" name="rate" id="rate"
                                         placeholder="{{ localize('Rate') }}" class="form-control" required
                                         value="{{ $currency->rate }}">

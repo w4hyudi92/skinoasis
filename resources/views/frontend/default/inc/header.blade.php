@@ -1,5 +1,5 @@
 <header class="gheader position-relative z-2 header-sticky">
-    <div class="ghead-topbar bg-primary d-none d-lg-block">
+    <!-- <div class="ghead-topbar bg-primary d-none d-lg-block">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xxl-4 col-xl-3">
@@ -115,7 +115,7 @@
                             $currentCurrency = \App\Models\Currency::where('code', $currency_code)->first();
                             
                             if ($currentCurrency == null) {
-                                $currentCurrency = \App\Models\Currency::where('code', 'usd')->first();
+                                $currentCurrency = \App\Models\Currency::where('code', 'idr')->first();
                             }
                         @endphp
 
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --><br><br>
     <div class="container">
         <div class="gshop-navbar bg-white rounded ps-lg-5 position-relative">
             <div class="row align-items-center">

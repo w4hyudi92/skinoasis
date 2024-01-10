@@ -102,7 +102,7 @@
                         $currentCurrency = \App\Models\Currency::where('code', $currency_code)->first();
                         
                         if (is_null($currentCurrency)) {
-                            $currentCurrency = \App\Models\Currency::where('code', 'usd')->first();
+                            $currentCurrency = \App\Models\Currency::where('code', 'idr')->first();
                         }
                     @endphp
 
