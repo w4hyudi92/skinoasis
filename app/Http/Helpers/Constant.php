@@ -112,10 +112,10 @@ if (!function_exists('staticAsset')) {
     # return path for static assets
     function staticAsset($path, $secure = null)
     {
-        if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
+        // if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
             return app('url')->asset('' . $path, $secure) . '?v=' . env('APP_VERSION');
-        }
-        return app('url')->asset('public/' . $path, $secure) . '?v=' . env('APP_VERSION');
+        // }
+        // return app('url')->asset('public/' . $path, $secure) . '?v=' . env('APP_VERSION');
     }
 }
 
@@ -123,10 +123,10 @@ if (!function_exists('staticAssetApi')) {
     # return path for static assets
     function staticAssetApi($path, $secure = null)
     {
-        if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
+        // if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
             return app('url')->asset('' . $path, $secure);
-        }
-        return app('url')->asset('public/' . $path, $secure);
+        // }
+        // return app('url')->asset('public/' . $path, $secure);
     }
 }
 
@@ -136,10 +136,10 @@ if (!function_exists('uploadedAsset')) {
     {
         $mediaFile = MediaManager::find($fileId);
         if (!is_null($mediaFile)) {
-            if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
+            // if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
                 return app('url')->asset('' . $mediaFile->media_file);
-            }
-            return app('url')->asset('public/' . $mediaFile->media_file);
+            // }
+            // return app('url')->asset('public/' . $mediaFile->media_file);
         }
         return '';
     }
@@ -157,10 +157,10 @@ if (!function_exists('uploadedAssetes')) {
         if ($mediaFiles) {
 
             foreach ($mediaFiles as $file) {
-                if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
+                // if (str_contains(url('/'), '.test') || str_contains(url('/'), 'http://127.0.0.1:')) {
                     $assets[] = app('url')->asset('' . $file->media_file);
-                }
-                $assets[] = app('url')->asset('public/' . $file->media_file);
+                // }
+                // $assets[] = app('url')->asset('public/' . $file->media_file);
             }
         }
         return $assets;
