@@ -7,6 +7,10 @@
 @import '../config/fonts';
 @import '../config/variables';
 
+.mb-md-12{
+	margin-bottom: 5rem!important;
+}
+
 .title {
 	font-weight: 600;
 	font-size: 2.2rem;
@@ -91,6 +95,22 @@
 	position: relative;
 	.title {
 		margin-bottom: .9rem;
+	}
+}
+
+.heading-ig{
+	margin-bottom: 4.2rem;
+	position: relative;
+
+	h4{
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	.logo-hashtag{
+		margin:auto;
+		width: 20%;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -466,6 +486,233 @@
 		box-shadow: 0 1px 0 0 #ffF;
 	}
 }
+
+
+
+
+.deal-container {
+	.banner-subtitle {
+		color: #666;
+		margin-bottom: .9rem;
+		font-weight: 400;
+	}
+
+	.banner-content.banner-content-top {
+		top: 4rem;
+	}
+
+	.banner-text {
+		font-weight: 600;
+	}
+}
+
+.bg-green{
+	background-color: #4C6346;
+}
+
+.bg-lime{
+	background-color: #E0E9CC;
+}
+
+.deal {
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.deal-content {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 3.5rem 0 2rem;
+
+	.btn {
+		padding-top: .85rem;
+		padding-bottom: .85rem;
+		font-weight: 500;
+		color: #ffffff;
+		background-color: transparent;
+		border: .1rem solid #ebebeb;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: $primary-color;
+			background-color: $primary-color;
+		}
+	}
+
+	h4 {
+		color: #fff;
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 1.3;
+		letter-spacing: -.01em;
+		margin-bottom: .5rem;
+	}
+
+	h2 {
+		color: #fff;
+		font-weight: 600;
+		font-size: 4rem;
+		line-height: 1.1;
+		letter-spacing: -.05em;
+		margin-bottom: 3.6rem;
+	}
+
+	.product-title {
+		font-weight: 600;
+		font-size: 2rem;
+		letter-spacing: -.01em;
+		margin-bottom: .7rem;
+	}
+
+	.product-price {
+		font-weight: 300;
+		font-size: 2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	.new-price {
+		font-weight: 600;
+		color: #ffffff;
+	}
+}
+
+.deal-image {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	> a {
+		display: block;
+	}
+}
+
+.deal-countdown {
+	margin-bottom: 4rem;
+	margin-left: -1rem;
+	max-width: 270px;
+
+	.countdown-show3 .countdown-section {
+		width: calc(33.33% - 20px);
+	}
+
+	.countdown-section {
+		font-size: 1.2rem;
+		line-height: 1;
+		padding: 1.6rem 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		background-color: $primary-color;
+		border-radius: .3rem;
+		border: .1rem solid #e1e1e1;
+
+		&:not(:last-child):after {
+			color: #333333;
+			content: ':';
+			display: inline-block;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1;
+			position: absolute;
+			left: 100%;
+			margin-left: 9px;
+			margin-top: -1px;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+		}
+	}
+
+	.countdown-period {
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: #fff;
+		text-transform: lowercase;
+		width: 100%;
+		padding-left: .2rem;
+		padding-right: .2rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.countdown-amount {
+		display: inline-block;
+		color: #fff;
+		font-weight: 600;
+		font-size: 3rem;
+		letter-spacing: -.05em;
+		margin-bottom: .4rem;
+	}
+}
+
+@include mq('md') {
+	.deal {
+		flex-direction: row;
+	}
+
+	.deal-content {
+		-ms-flex: 0 0 36%;
+		flex: 0 0 36%;
+		max-width: 36%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.deal-image {
+		-ms-flex: 0 0 64%;
+		flex: 0 0 64%;
+		max-width: 64%;
+	}
+}
+
+@include mq('xl') {
+	.deal-content {
+		padding: 3.5rem 3rem 2rem;
+
+		.btn {
+			padding-top: 1.15rem;
+			padding-bottom: 1.15rem;
+		}
+
+		h4 {
+			font-size: 2rem;
+			color: #ffffff;
+		}
+
+		h2 {
+			font-size: 4rem;
+			color: #ffffff;
+		}
+
+		.product-title {
+			font-size: 2.4rem;
+			color: #ffffff;
+		}
+
+		.product-price {
+			font-size: 2.4rem;
+			color: #ffffff;
+		}
+	}
+
+	.deal-countdown {
+		.countdown-section {
+			padding-top: 2.1rem;
+			padding-bottom: 2.1rem;
+		}
+
+		.countdown-amount {
+			font-size: 3rem;
+		}
+	}
+}
+
+
 
 .product {
 	margin-bottom: 3rem;
@@ -879,6 +1126,178 @@
 	font-size: 1.4rem;
 }
 
+.instagram-store {
+
+	hr {
+		margin-bottom: 6.5rem;
+	}
+
+	.title {
+		margin-bottom: 3.5rem;
+		margin-top: 1rem;
+	}
+
+	> .row {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
+	.banner-sm-div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.banner-sm, .banner-lg {
+		padding: .5rem;
+	}
+
+}
+
+
+.instagram-feed {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 2rem;
+	background-color: transparent;
+
+	&::after {
+		left: .5rem;
+		top: .5rem;
+		right: .5rem;
+		bottom: .5rem;
+	}
+
+	a:hover,
+	a:focus {
+		color: $primary-color;
+	}
+
+	.owl-carousel & {
+		margin-bottom: 0;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(51, 51, 51, .4);
+		transition: all 0.4s ease;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1;
+	}
+
+	&:hover {
+		&:after,
+		.instagram-feed-content {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	img {
+		max-width: none;
+		width: 100%;
+	}
+}
+
+.instagram-feed-content {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom:0;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.6rem;
+	transition: all 0.45s ease;
+	opacity: 0;
+	visibility: hidden;
+
+	i {
+		font-weight: normal;
+		margin-right: .8rem;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			color: $primary-color;
+		}
+
+		+ a {
+			margin-left: 2rem;
+		}
+	}
+}
+
+
+[class^="ico-m-"] {
+	&:before {
+		font-style: normal;
+		font-weight: 400;
+		display: inline-block;
+		text-decoration: inherit;
+		width: 1em;
+		margin-right: .2em;
+		text-align: center;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1em;
+		margin-left: .2em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+[class*="ico-m-"] {
+	&:before {
+		font-style: normal;
+		font-weight: 400;
+		display: inline-block;
+		text-decoration: inherit;
+		width: 1em;
+		margin-right: .2em;
+		text-align: center;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1em;
+		margin-left: .2em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+.ico-m-grid:before {
+    content: '\ef02';
+}
+.ico-m-shop-bag:before {
+    content: '\e842';
+}
+.ico-m--user-profile:before {
+    content: '\e844';
+}
+.ico-m-user-profile:before {
+    content: '\e844';
+}
+
+.footer-fix-nav {
+	display: none;
+}
+
 
 @include mq('sm') {
 	.intro-subtitle {
@@ -928,6 +1347,40 @@
 	}
 }
 
+
+@media screen and (min-width: 576px) {
+	.banner-lg {
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+	.banner-sm-div {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.banner-sm {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.banner-lg {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.banner-sm-div {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.banner-sm {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+
 @include mq('xl') {
 	.intro-slider-container,
 	.intro-slide {
@@ -969,6 +1422,12 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.instagram-store .banner-lg {
+		order: 1;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.header-middle .header-center {
 		display: block;
@@ -979,59 +1438,6 @@
 }
 
 
-
-[class^="ico-m-"] {
-	&:before {
-		font-style: normal;
-		font-weight: 400;
-		display: inline-block;
-		text-decoration: inherit;
-		width: 1em;
-		margin-right: .2em;
-		text-align: center;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1em;
-		margin-left: .2em;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-}
-[class*="ico-m-"] {
-	&:before {
-		font-style: normal;
-		font-weight: 400;
-		display: inline-block;
-		text-decoration: inherit;
-		width: 1em;
-		margin-right: .2em;
-		text-align: center;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1em;
-		margin-left: .2em;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-}
-
-
-.ico-m-grid:before {
-    content: '\ef02';
-}
-.ico-m-shop-bag:before {
-    content: '\e842';
-}
-.ico-m--user-profile:before {
-    content: '\e844';
-}
-.ico-m-user-profile:before {
-    content: '\e844';
-}
-
-.footer-fix-nav {
-	display: none;
-}
 @media (max-width: 575.98px){
 	.footer-fix-nav {
 		position: fixed;
