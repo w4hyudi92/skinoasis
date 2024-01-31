@@ -13,20 +13,6 @@
 <script src="{{ staticAsset('frontend/skinoasis/assets/js/demos/demo-18.js') }}"></script>
 
 
-<!-- <script src="{{ staticAsset('frontend/default/assets/js/vendors/swiper-bundle.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/simplebar.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/parallax-scroll.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/isotop.pkgd.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/countdown.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/range-slider.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/counterup.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/vendors/clipboard.min.js') }}"></script>
-
-<script src="{{ staticAsset('frontend/common/js/toastr.min.js') }}"></script>
-<script src="{{ staticAsset('frontend/common/js/select2.js') }}"></script>
-<script src="{{ staticAsset('frontend/default/assets/js/app.js') }}"></script> -->
-
-
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
