@@ -7,7 +7,7 @@
                 <div class="col-lg-6">
                     <div class="banner-set-image banner-border-hover">
                         <a href="#">
-                            <img src="assets/images/demos/demo-5/banners/banner-4.jpg" alt="banner">
+                            <img src="{{ staticAsset('frontend/skinoasis/assets/images/demos/demo-5/banners/banner-4.jpg') }}" alt="banner">
                         </a>
                         <div class="banner-content">
                             <h3 class="banner-title"><a href="#"><span>Casual basics and<br>trendy key pieces.</span></a></h3><!-- End .banner-title -->
