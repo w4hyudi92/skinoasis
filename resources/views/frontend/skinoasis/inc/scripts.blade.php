@@ -15,6 +15,18 @@
 <script src="{{ staticAsset('frontend/common/js/toastr.min.js') }}"></script>
 <script src="{{ staticAsset('frontend/common/js/select2.js') }}"></script>
 <script src="{{ staticAsset('frontend/default/assets/js/app.js') }}"></script>
+
+<!-- Plugins JS File -->
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.min.js"></script>
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.hoverIntent.min.js"></script>
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/superfish.min.js"></script>
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/owl.carousel.min.js"></script>
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/bootstrap-input-spinner.js"></script>
+<!-- Main JS File -->
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/main.js"></script>
+<script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/demos/demo-18.js"></script>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
