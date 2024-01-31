@@ -10,24 +10,24 @@
     <meta name="description" content="SKINOASIS">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/favicon-16x16.png">
-    <!-- <link rel="manifest" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/site.webmanifest"> -->
-    <link rel="mask-icon" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/site.webmanifest"> -->
+    <link rel="mask-icon" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/safari-pinned-tab.svg" color="#666666">
+    <link rel="shortcut icon" href="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Molla">
     <meta name="application-name" content="Molla">
     <meta name="msapplication-TileColor" content="#cc9966">
-    <meta name="msapplication-config" content="{{ staticAsset('frontend/skinoasis/') }}assets/images/icons/browserconfig.xml">
+    <meta name="msapplication-config" content="{{ staticAsset('frontend/skinoasis') }}/assets/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis/') }}assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis/') }}assets/css/plugins/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis/') }}assets/css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis') }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis') }}/assets/css/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis') }}/assets/css/plugins/magnific-popup/magnific-popup.css">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis/') }}assets/css/style.css">
-    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis/') }}assets/css/demos/demo-18.css">
+    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis') }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ staticAsset('frontend/skinoasis') }}/assets/css/demos/demo-18.css">
 
     <script>
         WebFontConfig = {
@@ -35,8 +35,8 @@
         };
         (function(d) {
             var wf = d.createElement('script'), s = d.scripts[0];
-            var url = {{ staticAsset('frontend/skinoasis/') }};
-            wf.src = url + 'assets/js/webfont.js';
+            var url = {{ staticAsset('frontend/skinoasis') }};
+            wf.src = url + '/assets/js/webfont.js';
             wf.async = true;
             s.parentNode.insertBefore(wf, s);
         })(document);
@@ -50,7 +50,7 @@
                 <div class="container">
                     <div class="header-center">
                         <a href="index.html" class="logo">
-                            <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/logo.png" alt="SKINOASIS Logo" width="200" height="25">
+                            <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/logo.png" alt="SKINOASIS Logo" width="200" height="25">
                         </a>
                     </div><!-- End .header-center -->
                 </div><!-- End .container -->
@@ -116,7 +116,7 @@
 
                                         <figure class="product-image-container">
                                             <a href="product.html" class="product-image">
-                                                <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/products/cart/product-1.jpg" alt="product">
+                                                <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/products/cart/product-1.jpg" alt="product">
                                             </a>
                                         </figure>
                                         <a href="#" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
@@ -136,7 +136,7 @@
 
                                         <figure class="product-image-container">
                                             <a href="product.html" class="product-image">
-                                                <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/products/cart/product-2.jpg" alt="product">
+                                                <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/products/cart/product-2.jpg" alt="product">
                                             </a>
                                         </figure>
                                         <a href="#" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
@@ -169,7 +169,7 @@
         <main class="main">
             <div class="intro-slider-container mb-3 mb-lg-5">
                 <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl" data-owl-options='{"dots": true, "nav": false}'>
-                    <div class="intro-slide" style="background-image: url({{ staticAsset('frontend/skinoasis/') }}assets/images/home-bg.png);">
+                    <div class="intro-slide" style="background-image: url({{ staticAsset('frontend/skinoasis') }}/assets/images/home-bg.png);">
                         <div class="container">
                             <div class="intro-content text-center">
                                 <h3 class="intro-subtitle cross-txt text-primary">SEASONAL PICKS</h3><!-- End .h3 intro-subtitle -->
@@ -187,7 +187,7 @@
                         </div><!-- End .intro-content -->
                     </div><!-- End .intro-slide -->
 
-                    <div class="intro-slide" style="background-image: url({{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-18/slider/slide-2.jpg);">
+                    <div class="intro-slide" style="background-image: url({{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-18/slider/slide-2.jpg);">
                         <div class="container">
                             <div class="intro-content text-center">
                                 <h3 class="intro-subtitle text-primary cross-txt">Women's Accessories</h3><!-- End .h3 intro-subtitle -->
@@ -234,43 +234,43 @@
                 }'>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/1.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/1.png" alt="Brand Name">
                 </a>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/2.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/2.png" alt="Brand Name">
                 </a>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/3.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/3.png" alt="Brand Name">
                 </a>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/4.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/4.png" alt="Brand Name">
                 </a>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/5.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/5.png" alt="Brand Name">
                 </a>
 
                 <a href="#" class="brand">
-                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/brands/6.png" alt="Brand Name">
+                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/brands/6.png" alt="Brand Name">
                 </a>
 
             </div><!-- End .owl-carousel -->
 
             <!-- Flyer Home 1 -->
-            <section class="gallery pt-5" style="background-image: url({{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-30/bg-3.png)">
+            <section class="gallery pt-5" style="background-image: url({{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-30/bg-3.png)">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-md-6">
                             <div class="content-right">
                                 <figure class="mb-md-12">
-                                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-30/banners/banner-2.jpg" alt="Banner">
+                                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-30/banners/banner-2.jpg" alt="Banner">
                                 </figure>
                                 <figure>
-                                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-30/banners/banner-3.jpg" alt="Banner">
+                                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-30/banners/banner-3.jpg" alt="Banner">
                                 </figure>
                             </div>
                         </div>
@@ -287,7 +287,7 @@
                                     </p>
                                 </div>
                                 <figure>
-                                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-30/banners/banner-1.jpg" alt="Banner">
+                                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-30/banners/banner-1.jpg" alt="Banner">
                                 </figure>
                             </div>
                         </div>
@@ -305,7 +305,7 @@
                             <div class="col-lg-6">
                                 <div class="banner-set-image banner-border-hover">
                                     <a href="#">
-                                        <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-5/banners/banner-4.jpg" alt="banner">
+                                        <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-5/banners/banner-4.jpg" alt="banner">
                                     </a>
                                     <div class="banner-content">
                                         <h3 class="banner-title"><a href="#"><span>Casual basics and<br>trendy key pieces.</span></a></h3><!-- End .banner-title -->
@@ -333,7 +333,7 @@
                                                         <div class="product product-2 text-center">
                                                             <figure class="product-media">
                                                                 <a href="product.html">
-                                                                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-5/products/product-13.jpg" alt="Product image" class="product-image">
+                                                                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-5/products/product-13.jpg" alt="Product image" class="product-image">
                                                                 </a>
                                                             </figure><!-- End .product-media -->
 
@@ -350,7 +350,7 @@
                                                         <div class="product product-2 text-center">
                                                             <figure class="product-media">
                                                                 <a href="product.html">
-                                                                    <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/demos/demo-5/products/product-14.jpg" alt="Product image" class="product-image">
+                                                                    <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/demos/demo-5/products/product-14.jpg" alt="Product image" class="product-image">
                                                                 </a>
                                                             </figure><!-- End .product-media -->
 
@@ -384,7 +384,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-6">
                             <div class="widget widget-about">
-                                <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/logo-black.png" class="footer-logo" alt="Footer Logo" width="200" height="25">
+                                <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/logo-black.png" class="footer-logo" alt="Footer Logo" width="200" height="25">
                                 <p>
                                     <ol class="footer-about">
                                         <li> We take the doubt out of whether you need by provide a safe, high quality, high efficacy products</li>
@@ -744,7 +744,7 @@
                 <div class="row no-gutters bg-white newsletter-popup-content">
                     <div class="col-xl-3-5col col-lg-7 banner-content-wrap">
                         <div class="banner-content text-center">
-                            <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60" height="15">
+                            <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60" height="15">
                             <h2 class="banner-title">get <span>25<light>%</light></span> off</h2>
                             <p>Subscribe to the Molla eCommerce newsletter to receive timely updates from your favorite products.</p>
                             <form action="#">
@@ -762,24 +762,24 @@
                         </div>
                     </div>
                     <div class="col-xl-2-5col col-lg-5 ">
-                        <img src="{{ staticAsset('frontend/skinoasis/') }}assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
+                        <img src="{{ staticAsset('frontend/skinoasis') }}/assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Plugins JS File -->
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.hoverIntent.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.waypoints.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/superfish.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/owl.carousel.min.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/bootstrap-input-spinner.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/jquery.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/jquery.waypoints.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/superfish.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/owl.carousel.min.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/bootstrap-input-spinner.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/jquery.magnific-popup.min.js"></script>
     <!-- Main JS File -->
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/main.js"></script>
-    <script src="{{ staticAsset('frontend/skinoasis/') }}assets/js/demos/demo-18.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/main.js"></script>
+    <script src="{{ staticAsset('frontend/skinoasis') }}/assets/js/demos/demo-18.js"></script>
 </body>
 
 </html>
