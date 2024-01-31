@@ -110,10 +110,10 @@
         <!--header section start-->
         @if (isset($exception))
             @if ($exception->getStatusCode() != 503)
-                @include('frontend.default.inc.header')
+                @include('frontend.skinoasis.inc.header')
             @endif
         @else
-            @include('frontend.default.inc.header')
+            @include('frontend.skinoasis.inc.header')
         @endif
         <!--header section end-->
 
@@ -434,7 +434,7 @@
 
 
     <!--build:js-->
-    @include('frontend.default.inc.scripts')
+    @include('frontend.skinoasis.inc.scripts')
         <!--endbuild-->
 
     <!--page's scripts-->
